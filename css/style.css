@@ -30,7 +30,7 @@ section.hero {
 section.hero .jumbotron {
     width: 100%;
     background-color: #E8FFEB;
-    background-image: url("../gambar/ilustrasi/bannerbg.png");
+    background-image: url("../Gambar/ilustrasi/bannerbg.png");
     padding: 0 25px;
     display: flex;
     justify-content: space-between;
@@ -83,7 +83,7 @@ section.populer .jumbotron {
     height: 670px;
     top: -250px;
     left: 0px;
-    background: url("../gambar/curve/home_curve_reverse.png");
+    background: url("../Gambar/curve/home_curve_reverse.png");
     background-size: cover;
 }
 
@@ -278,7 +278,7 @@ footer {
     bottom: -1250px;
     left: 0;
     background-color: #1B4332;
-    background: url("../gambar/curve/home_footer.png");
+    background: url("../Gambar/curve/home_footer.png");
     background-size: cover;
 }
 
