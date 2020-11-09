@@ -93,3 +93,201 @@ section.hero .jumbotron .hero_text h1 {
     font-size: 60px;
     color: #1B4332;
 }
+
+
+/* Alasan */
+
+section.alasan {
+    position: relative;
+    padding: 0 35px;
+    width: 100%;
+    bottom: -650px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+section.alasan .row {
+    padding-top: 130px;
+}
+
+section.alasan p {
+    font-size: 25px;
+    color: #40916C;
+}
+
+section.alasan h1 {
+    margin-bottom: 35px;
+    font-size: 60px;
+    color: #1B4332;
+    margin-top: 50px;
+}
+
+section.alasan img {
+    width: 520px;
+    height: 503px;
+}
+
+section.alasan .row:nth-child(1) img {
+    width: 550px;
+    height: 400px;
+}
+
+
+/* Card Footer */
+
+section.footer_card {
+    position: absolute;
+    width: 100%;
+    bottom: -2600px;
+    display: flex;
+    justify-content: space-around;
+    z-index: 1;
+}
+
+section.footer_card .card {
+    background-color: #E8FFEB;
+    padding: 10px 15px;
+    border-radius: 30px;
+}
+
+section.footer_card .card h5 {
+    font-size: 38px;
+    color: #1B4332;
+}
+
+section.footer_card .card:nth-child(2) {
+    bottom: 80px;
+}
+
+section.footer_card .card:nth-child(2) h5 {
+    font-size: 35px;
+}
+
+section.footer_card .card .btn {
+    height: 37px;
+    width: 120px;
+    background-color: #85CDA7;
+    border: 1px solid #85CDA7;
+    color: #1B4332;
+    border-radius: 15px;
+}
+
+section.footer_card .card .btn:hover {
+    height: 42px;
+    width: 125px;
+    background-color: #2A7050;
+    color: #85CDA7;
+    transition: 0.5s;
+}
+
+
+/* Footer */
+
+footer {
+    position: relative;
+    width: 100%;
+    height: 870px;
+    margin-top: 100px;
+    bottom: -900px;
+    left: 0;
+    background-color: #1B4332;
+    background: url("../Gambar/curve/home_footer.png");
+    background-size: cover;
+}
+
+footer .container {
+    width: 100%;
+    position: relative;
+    color: white;
+    font-size: 70px;
+    bottom: -415px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+footer .container .text {
+    margin: 0 auto;
+    margin-bottom: 70px;
+}
+
+footer .container .gambar {
+    display: flex;
+    align-items: center;
+}
+
+footer .container .gambar a img {
+    width: 150px;
+    height: 80px;
+}
+
+footer .container .gambar a img:hover {
+    width: 155px;
+    height: 85px;
+    transition: 0.5s;
+}
+
+footer .container .hubungi img {
+    width: 40px;
+    height: 36px;
+}
+
+footer .container span {
+    font-size: 30px;
+}
+
+footer .container div.garis {
+    width: 250px;
+    height: 2px;
+    background-color: white;
+}
+
+footer .container .text div.garis {
+    width: 270px;
+}
+
+footer .container .gambar a {
+    position: absolute;
+    padding: 0;
+    font-family: 'muli';
+    font-size: 20px;
+    margin-top: 5px;
+    color: white;
+    text-decoration: none;
+}
+
+footer .container .gambar a:hover {
+    font-size: 22px;
+    color: #40916C;
+    transition: 0.5s;
+}
+
+footer .container .hubungi a img {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    margin: 5px 5px;
+    right: -95%;
+}
+
+footer .container .hubungi a img:hover {
+    width: 35px;
+    height: 35px;
+    transition: 0.5s;
+}
+
+
+/* Copy Right */
+
+footer .container .copy {
+    position: relative;
+    margin: 0 auto;
+    bottom: -190px;
+}
+
+footer .container .copy h5 {
+    font-family: 'muli';
+    font-size: 15px;
+}

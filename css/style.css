@@ -12,6 +12,7 @@ p {
 }
 
 .navbar {
+    width: 100%;
     background-color: #85CDA7;
     color: #1B4332;
 }
@@ -25,6 +26,11 @@ p {
 
 section.hero {
     position: relative;
+}
+
+section.hero img {
+    width: 680px;
+    height: 450px;
 }
 
 section.hero .jumbotron {
@@ -94,6 +100,8 @@ section.populer .row {
 }
 
 section.populer .row .card {
+    width: 18rem;
+    height: 400px;
     background-color: #E8FFEB;
     padding: 10px 15px;
     border-radius: 30px;
@@ -375,4 +383,94 @@ footer .container .copy {
 footer .container .copy h5 {
     font-family: 'muli';
     font-size: 15px;
+}
+
+
+/* Responsive */
+
+@media screen and (max-width: 360px) {
+    .navbar a img {
+        display: none
+    }
+    section.hero {
+        width: 100%;
+        height: 400px;
+    }
+    section.hero .jumbotron .hero {
+        margin-bottom: 0;
+    }
+    section.hero img {
+        margin-top: 20px;
+        width: 130px;
+        height: 100px;
+    }
+    section.hero .jumbotron .hero_text h1 {
+        position: relative;
+        font-size: 20px;
+        margin-top: 20px;
+    }
+    section.hero .jumbotron .hero_text p {
+        position: relative;
+        font-size: 15px;
+    }
+    /* Populer */
+    section.populer .jumbotron {
+        position: absolute;
+        width: 100%;
+        height: 200px;
+        top: -250px;
+        left: 0px;
+    }
+    section.populer .row {
+        position: relative;
+        top: -150px;
+        width: 100%;
+    }
+    section.populer .row .card {
+        position: absolute;
+        width: 100px;
+        height: 130px;
+        right: -20px;
+        top: 30px;
+        padding: 0px 0px;
+        border-radius: 20px;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        box-sizing: border-box;
+    }
+    section.populer .row h5 {
+        position: relative;
+        font-size: 10px;
+        top: -10px;
+    }
+    section.populer .row .btn {
+        position: relative;
+        width: 70px;
+        height: 10px;
+        font-size: 7px;
+        border-radius: 15px;
+        top: -55px;
+    }
+    section.populer .row #banding .btn {
+        top: -35px
+    }
+    section.populer .row #banding {
+        margin-right: 20px;
+    }
+    section.populer .row .btn span {
+        position: relative;
+        font-family: "muli";
+        top: -5px;
+    }
+    section.populer .row h1 {
+        width: 90px;
+        font-size: 20px;
+        color: white;
+        margin-top: 30px;
+    }
+    section.populer .row p {
+        font-size: 10px;
+        color: white;
+    }
 }
