@@ -1,0 +1,95 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+span {
+    font-family: "ø";
+}
+
+p {
+    font-family: "muli";
+}
+
+.navbar {
+    background-color: #85CDA7;
+    color: #1B4332;
+    z-index: 1;
+}
+
+.dropdown-menu {
+    background-color: #85CDA7;
+}
+
+
+/* Hero */
+
+section.hero {
+    position: relative;
+    width: 100%;
+}
+
+section.hero .jumbotron {
+    position: absolute;
+    width: 100%;
+    height: 642px;
+    background: url(../Gambar/curve/tentang_curve.png);
+    padding: 0 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+section.hero .jumbotron .hero {
+    position: relative;
+    width: 100%;
+    flex: 1;
+    bottom: -70px;
+    z-index: 1;
+}
+
+section.hero .jumbotron .hero img {
+    width: 580px;
+    height: 350px;
+}
+
+section.hero .jumbotron .background {
+    position: absolute;
+    width: 100%;
+    height: 550px;
+    top: 0;
+    left: 0;
+    background: url(../Gambar/ilustrasi/bannerbg2.png);
+    background-size: cover;
+    top: -60px;
+    z-index: 0;
+    animation: herobg 15s linear infinite;
+}
+
+@keyframes herobg {
+    0% {
+        background-position-x: 0;
+    }
+    100% {
+        background-position-x: 1450px;
+    }
+}
+
+section.hero .jumbotron .hero_text {
+    position: relative;
+    top: -100px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    flex: 2;
+    z-index: 1;
+}
+
+section.hero .jumbotron .hero_text p {
+    font-size: 30px;
+    color: #40916C;
+}
+
+section.hero .jumbotron .hero_text h1 {
+    font-size: 60px;
+    color: #1B4332;
+}
