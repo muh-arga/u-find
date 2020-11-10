@@ -463,8 +463,13 @@ footer .container .copy h5 {
         border-radius: 15px;
         top: -55px;
     }
+    section.populer .row #top .btn {
+        top: -49px;
+        left: -5px;
+    }
     section.populer .row #banding .btn {
-        top: -35px
+        top: -30px;
+        left: -5px;
     }
     section.populer .row #banding {
         margin-right: 20px;
@@ -485,17 +490,26 @@ footer .container .copy h5 {
     /* Bagian Utama */
     section.utama {
         position: absolute;
-        top: -90px;
-        padding: 20px;
+        top: -70px;
+        padding: 0;
         display: flex;
         flex-direction: column;
         justify-content: start;
     }
     section.utama .row {
         display: flex;
+        width: 100%;
+        padding: 0;
+    }
+    section.utama .row #utama_populer {
+        position: relative;
+        right: -55px;
+        width: 100%;
+        text-align: center;
     }
     section.utama .row #utama_populer h1 {
-        font-size: 30px;
+        width: 210px;
+        font-size: 20px;
     }
     section.utama .row #utama_populer p {
         margin-top: 10px;
@@ -514,14 +528,12 @@ footer .container .copy h5 {
         font-family: "muli";
         top: -5px;
     }
-    section.utama .row #utama_populer {
-        margin-right: 80px;
-        width: 100%;
-    }
     section.utama .row #utama_fitur {
+        width: 90%;
         position: absolute;
-        margin-top: 10px;
-        left: 0;
+        padding: 0;
+        margin-top: 30px;
+        left: 35px;
         bottom: -280px;
         display: flex;
         flex-wrap: wrap;
@@ -542,19 +554,19 @@ footer .container .copy h5 {
         width: 100%;
     }
     section.utama .row #utama_fitur .fitur1 {
-        width: 30%;
+        width: 35%;
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
     section.utama .row #utama_fitur .fitur2 {
-        width: 30%;
+        width: 35%;
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
     section.utama .row #utama_fitur .fitur3 {
-        width: 30%;
+        width: 40%;
         display: flex;
         margin-top: 30px;
         flex-direction: column;
@@ -624,6 +636,7 @@ footer .container .copy h5 {
         position: relative;
         font-size: 5px;
         bottom: -200px;
+        left: -15px;
         color: white;
         display: flex;
         flex-direction: column;
@@ -653,38 +666,37 @@ footer .container .copy h5 {
     }
     footer .container span {
         position: relative;
-        font-size: 10px;
+        font-size: 8px;
         margin-left: 10px;
         bottom: -5px;
     }
     footer .container div.garis {
-        width: 100px;
+        width: 80px;
         height: 2px;
         margin-top: 5px;
     }
-    footer .container .text div.garis {
-        width: 170px;
-    }
     footer .container .gambar a {
         padding: 0;
-        font-size: 10px;
+        font-size: 7px;
         margin-top: 5px;
     }
     footer .container .gambar a img {
         position: relative;
-        width: 20px;
-        height: 20px;
+        width: 15px;
+        height: 15px;
         margin: 2px 5px;
-        right: -20px;
+        right: -17px;
     }
     /* Copy Right */
     footer .container .copy {
         position: relative;
-        margin: 0 auto;
+        margin: 0;
         bottom: -50px;
+        align-self: center;
     }
     footer .container .copy h5 {
         font-family: 'muli';
         font-size: 7px;
+        text-align: center;
     }
 }
