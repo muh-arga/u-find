@@ -17,6 +17,10 @@ p {
     z-index: 2;
 }
 
+.navbar .home {
+    display: none;
+}
+
 .dropdown-menu {
     background-color: #85CDA7;
 }
@@ -302,6 +306,9 @@ footer .container .copy h5 {
 /* Responsive mobile */
 
 @media screen and (max-width: 576px) {
+    .navbar .home {
+        display: inline;
+    }
     .navbar a img {
         display: none;
     }
