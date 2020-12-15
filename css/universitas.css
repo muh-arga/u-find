@@ -207,6 +207,7 @@ section.jumlah {
 }
 
 section.jumlah .card {
+    position: relative;
     width: 200px;
     height: 200px;
     border: 0;
@@ -354,6 +355,23 @@ section.jalur .row div.card .container .garis {
 
 section.jalur .row:nth-child(2) div.card .container .garis {
     background-color: white;
+}
+
+section.jalur .row .gambar img {
+    margin-top: 200px;
+    animation: upDown 5s linear infinite;
+}
+
+@keyframes upDown {
+    0% {
+        top: -100px;
+    }
+    50% {
+        top: -50px;
+    }
+    100% {
+        top: -100px;
+    }
 }
 
 section.jalur .row:nth-child(2) img {
@@ -531,8 +549,12 @@ footer .container .hubungi a img {
     position: relative;
     width: 30px;
     height: 30px;
-    margin: 5px 5px;
-    right: -95%;
+    margin: 5px 20px;
+    right: -97%;
+}
+
+footer .container .hubungi a.wa img {
+    margin-right: 70px;
 }
 
 footer .container .hubungi a img:hover {

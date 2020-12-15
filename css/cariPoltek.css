@@ -372,8 +372,12 @@ footer .container .hubungi a img {
     position: relative;
     width: 30px;
     height: 30px;
-    margin: 5px 5px;
-    right: -95%;
+    margin: 5px 20px;
+    right: -97%;
+}
+
+footer .container .hubungi a.wa img {
+    margin-right: 70px;
 }
 
 footer .container .hubungi a img:hover {

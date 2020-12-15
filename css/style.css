@@ -384,8 +384,12 @@ footer .container .hubungi a img {
     position: relative;
     width: 30px;
     height: 30px;
-    margin: 5px 5px;
-    right: -95%;
+    margin: 5px 20px;
+    right: -97%;
+}
+
+footer .container .hubungi a.wa img {
+    margin-right: 70px;
 }
 
 footer .container .hubungi a img:hover {
@@ -612,14 +616,11 @@ footer .container .copy h5 {
     }
     section.footer_card .card {
         position: relative;
-        width: 100px;
-        height: 130px;
-        padding: 0px 0px;
-        border-radius: 20px;
-        display: flex;
-        flex-wrap: nowrap;
-        justify-content: center;
-        box-sizing: border-box;
+        background-color: #E8FFEB;
+        padding: 10px 15px;
+        border-radius: 30px;
+        width: 18rem;
+        height: 400px;
     }
     section.footer_card .card h5 {
         position: relative;
