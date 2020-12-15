@@ -119,13 +119,12 @@ section.daftar_kampus .container .form-control {
 
 section.daftar_kampus .container .btn {
     width: 100px;
-    height: 50px;
+    height: 45px;
     border-radius: 50px;
     border: none;
-    font-size: 40px;
+    font-size: 25px;
+    padding-bottom: 45px;
     font-family: "ø";
-    padding-top: 0;
-    text-align: center;
     background-color: #40916C;
     transition: 0.2s;
 }
