@@ -1,0 +1,578 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+span {
+    font-family: "ø";
+}
+
+p {
+    font-family: "muli";
+}
+
+.navbar {
+    background-color: #85CDA7;
+    color: #1B4332;
+    z-index: 2;
+}
+
+.navbar .home {
+    display: none;
+}
+
+.dropdown-menu {
+    background-color: #85CDA7;
+}
+
+
+/* Hero */
+
+section.hero {
+    position: relative;
+    width: 100%;
+}
+
+section.hero .jumbotron {
+    position: absolute;
+    width: 100%;
+    height: 542px;
+    background-color: #E8FFEB;
+    padding: 0 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+section.hero .jumbotron .hero {
+    position: relative;
+    width: 100%;
+    flex: 1;
+    bottom: -70px;
+    z-index: 1;
+}
+
+section.hero .jumbotron .hero img {
+    position: relative;
+    top: -50px;
+    width: 680px;
+    height: 450px;
+}
+
+section.hero .jumbotron .background {
+    position: absolute;
+    width: 100%;
+    height: 550px;
+    left: 0;
+    background: url(../Gambar/ilustrasi/bannerbg2.png);
+    background-size: cover;
+    top: -60px;
+    z-index: 0;
+    animation: herobg 15s linear infinite;
+}
+
+@keyframes herobg {
+    0% {
+        background-position-x: 0;
+    }
+    100% {
+        background-position-x: 1450px;
+    }
+}
+
+section.hero .jumbotron .hero_text {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    flex: 2;
+    z-index: 1;
+}
+
+section.hero .jumbotron .hero_text p {
+    font-size: 30px;
+    color: #40916C;
+}
+
+section.hero .jumbotron .hero_text h1 {
+    font-size: 60px;
+    color: #1B4332;
+}
+
+
+/* Peringkat */
+
+section.daftar_kampus {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    bottom: -600px;
+    color: #1B4332;
+}
+
+section.daftar_kampus .container .form-control {
+    width: 700px;
+    height: 50px;
+    border-radius: 50px;
+    border: 3px solid #1B4332;
+    margin: 0 20px 90px 250px;
+}
+
+section.daftar_kampus .container .btn {
+    width: 100px;
+    height: 50px;
+    border-radius: 50px;
+    border: none;
+    font-size: 40px;
+    font-family: "ø";
+    padding-top: 0;
+    text-align: center;
+    background-color: #40916C;
+    transition: 0.2s;
+}
+
+section.daftar_kampus .container .btn:hover {
+    background-color: #2A7050;
+    color: #85CDA7;
+    width: 105px;
+    height: 55px;
+}
+
+section.daftar_kampus h1 {
+    color: #1B4332;
+    position: relative;
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+
+section.daftar_kampus .container {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+section.daftar_kampus .isi {
+    width: 100%;
+    margin: 30px;
+    padding: 0;
+}
+
+section.daftar_kampus .row {
+    position: relative;
+    left: -20px;
+}
+
+section.daftar_kampus .row .col-sm {
+    position: relative;
+    left: -20px;
+    margin: 0;
+    padding: 0;
+    width: 100px;
+}
+
+section.daftar_kampus .row .col-sm h5.head_peringkat {
+    position: relative;
+    right: -110px;
+}
+
+section.daftar_kampus .isi h5 {
+    color: #1B4332;
+    font-size: 20px;
+}
+
+section.daftar_kampus .isi .urut {
+    margin-top: 50px;
+    margin-left: 70px;
+    display: flex;
+}
+
+section.daftar_kampus .isi .urut h5 {
+    position: relative;
+    left: -20px;
+}
+
+section.daftar_kampus .isi a {
+    color: #1B4332;
+}
+
+section.daftar_kampus .isi a:hover {
+    text-decoration: none;
+}
+
+section.daftar_kampus .isi a h5:hover {
+    color: #40916C;
+}
+
+section.daftar_kampus .isi .content {
+    position: relative;
+    left: -50px;
+    margin-top: 50px;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+}
+
+section.daftar_kampus .isi .content span {
+    font-family: "muli";
+    font-size: 20px;
+    color: #40916C;
+    margin: 5px 0 20px;
+}
+
+section.daftar_kampus .isi .urut img {
+    width: 100px;
+    height: 100px;
+    margin-left: 200px;
+}
+
+section.daftar_kampus .isi .info {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+section.daftar_kampus .isi .info .info_isi {
+    width: 100%;
+    text-align: center;
+    margin-right: 150px;
+}
+
+section.daftar_kampus .isi .info .info_isi span {
+    position: relative;
+    font-size: 20px;
+    bottom: -15px;
+}
+
+section.daftar_kampus .isi .info .info_isi:nth-last-child(2) h5 {
+    width: 300px;
+}
+
+section.daftar_kampus .isi .info .info_isi h5 {
+    width: 100%;
+}
+
+section.daftar_kampus .isi .info .info_isi:nth-child(3) {
+    position: relative;
+    left: 0px;
+    margin-right: 0;
+    width: 50px;
+}
+
+section.daftar_kampus .isi .info .info_isi:nth-child(3) span {
+    position: relative;
+    right: -20px;
+}
+
+section.daftar_kampus .garis {
+    width: 95%;
+    height: 3px;
+    background-color: #1B4332;
+    margin-top: 30px;
+}
+
+
+/* Pagination */
+
+section.pagination {
+    width: 10%;
+    position: relative;
+    bottom: -650px;
+    right: -1073px;
+    z-index: 1;
+}
+
+section.pagination a {
+    color: #40916C;
+    border: none;
+    font-size: 25px;
+}
+
+
+/* Footer */
+
+footer {
+    position: relative;
+    width: 100%;
+    height: 870px;
+    margin-top: 100px;
+    bottom: -650px;
+    left: 0;
+    background-color: #1B4332;
+    background: url("../Gambar/curve/home_footer.png");
+    background-size: cover;
+}
+
+footer .container {
+    width: 100%;
+    position: relative;
+    color: white;
+    font-size: 70px;
+    bottom: -415px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+footer .container .text {
+    margin: 0 auto;
+    margin-bottom: 70px;
+}
+
+footer .container .gambar {
+    display: flex;
+    align-items: center;
+}
+
+footer .container .gambar a img {
+    width: 150px;
+    height: 80px;
+}
+
+footer .container .gambar a img:hover {
+    width: 155px;
+    height: 85px;
+    transition: 0.5s;
+}
+
+footer .container .hubungi img {
+    width: 40px;
+    height: 36px;
+}
+
+footer .container span {
+    font-size: 30px;
+}
+
+footer .container div.garis {
+    width: 250px;
+    height: 2px;
+    background-color: white;
+}
+
+footer .container .text div.garis {
+    width: 270px;
+}
+
+footer .container .gambar a {
+    position: absolute;
+    padding: 0;
+    font-family: 'muli';
+    font-size: 20px;
+    margin-top: 5px;
+    color: white;
+    text-decoration: none;
+}
+
+footer .container .gambar a:hover {
+    font-size: 22px;
+    color: #40916C;
+    transition: 0.5s;
+}
+
+footer .container .hubungi a img {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    margin: 5px 5px;
+    right: -95%;
+}
+
+footer .container .hubungi a img:hover {
+    width: 35px;
+    height: 35px;
+    transition: 0.5s;
+}
+
+
+/* Copy Right */
+
+footer .container .copy {
+    position: relative;
+    margin: 0 auto;
+    bottom: -180px;
+}
+
+footer .container .copy h5 {
+    font-family: 'muli';
+    font-size: 15px;
+}
+
+
+/* Responsive mobile */
+
+@media screen and (max-width: 576px) {
+    .navbar .home {
+        display: inline;
+    }
+    .navbar a img {
+        display: none;
+    }
+    /* Hero */
+    section.hero {
+        position: relative;
+        width: 100%;
+    }
+    section.hero .jumbotron {
+        position: absolute;
+        width: 100%;
+        height: 270px;
+        background: url(../Gambar/curve/tentang_curve2.png);
+        padding: 0 25px;
+        display: flex;
+        justify-content: space-between;
+    }
+    section.hero .jumbotron .hero {
+        position: relative;
+        width: 100%;
+        flex: 1;
+        bottom: -40px;
+    }
+    section.hero .jumbotron .hero img {
+        width: 200px;
+        height: 150px;
+    }
+    section.hero .jumbotron .background {
+        position: absolute;
+        width: 100%;
+        height: 200px;
+        top: 0;
+        left: 0;
+        background: url(../Gambar/ilustrasi/bannerbg2.png);
+        background-size: cover;
+        z-index: 0;
+        animation: herobg 15s linear infinite;
+    }
+    section.hero .jumbotron .hero_text {
+        position: relative;
+        top: 0px;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        flex: 2;
+        z-index: 1;
+    }
+    section.hero .jumbotron .hero_text p {
+        font-size: 11.5px;
+    }
+    section.hero .jumbotron .hero_text h1 {
+        font-size: 20px;
+    }
+    /* Alasan */
+    section.alasan {
+        padding: 0;
+        margin: 0;
+        position: relative;
+        padding: 0 20px;
+        width: 100%;
+        bottom: -300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    section.alasan .row {
+        padding-top: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    section.alasan .row .sumber {
+        order: 1;
+    }
+    section.alasan .row .sumber_text {
+        order: 2;
+    }
+    section.alasan p {
+        font-size: 10px;
+    }
+    section.alasan h1 {
+        margin-bottom: 10px;
+        font-size: 20px;
+        margin-top: 50px;
+    }
+    section.alasan img {
+        width: 120px;
+        height: 103px;
+    }
+    section.alasan .row:nth-child(1) img {
+        width: 200px;
+        height: 100px;
+    }
+    section.alasan .row:nth-child(1) {
+        padding-left: 15px;
+    }
+    /* Footer */
+    footer {
+        position: relative;
+        bottom: -150px;
+        width: 100%;
+        height: 300px;
+        margin-top: 100px;
+        left: 0;
+    }
+    footer .container {
+        width: 100%;
+        font-size: 5px;
+        bottom: -200px;
+        left: -15px;
+    }
+    footer .container .text {
+        position: relative;
+        margin: 0 auto;
+        top: -60px;
+    }
+    footer .container .text h1 {
+        font-size: 20px;
+        text-align: center;
+    }
+    footer .container .text .garis {
+        display: none;
+    }
+    footer .container .gambar {
+        position: absolute;
+        display: flex;
+        align-items: center;
+    }
+    footer .container .gambar #fot_logo a img {
+        display: none;
+    }
+    footer .container .hubungi img {
+        width: 20px;
+        height: 16px;
+    }
+    footer .container span {
+        position: relative;
+        font-size: 8px;
+        margin-left: 10px;
+        bottom: -5px;
+    }
+    footer .container div.garis {
+        width: 80px;
+        height: 2px;
+        margin-top: 5px;
+    }
+    footer .container .gambar a {
+        padding: 0;
+        font-size: 7px;
+        margin-top: 5px;
+    }
+    footer .container .gambar a img {
+        position: relative;
+        width: 15px;
+        height: 15px;
+        margin: 2px 5px;
+        right: -17px;
+    }
+    /* Copy Right */
+    footer .container .copy {
+        position: relative;
+        margin: 0;
+        bottom: -50px;
+        align-self: center;
+    }
+    footer .container .copy h5 {
+        font-family: 'muli';
+        font-size: 7px;
+        text-align: center;
+    }
+}

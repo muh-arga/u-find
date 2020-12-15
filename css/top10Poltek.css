@@ -12,9 +12,9 @@ p {
 }
 
 .navbar {
-    width: 100%;
     background-color: #85CDA7;
     color: #1B4332;
+    z-index: 2;
 }
 
 .navbar .home {
@@ -30,22 +30,43 @@ p {
 
 section.hero {
     position: relative;
+    width: 100%;
 }
 
-section.hero img {
+section.hero .jumbotron {
+    position: absolute;
+    width: 100%;
+    height: 542px;
+    background-color: #E8FFEB;
+    padding: 0 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+section.hero .jumbotron .hero {
     position: relative;
-    bottom: -20px;
+    width: 100%;
+    flex: 1;
+    bottom: -70px;
+    z-index: 1;
+}
+
+section.hero .jumbotron .hero img {
+    position: relative;
+    top: -50px;
     width: 680px;
     height: 450px;
 }
 
-section.hero .jumbotron {
+section.hero .jumbotron .background {
+    position: absolute;
     width: 100%;
-    background-color: #E8FFEB;
-    background-image: url("../Gambar/ilustrasi/bannerbg.png");
-    padding: 0 25px;
-    display: flex;
-    justify-content: space-between;
+    height: 550px;
+    left: 0;
+    background: url(../Gambar/ilustrasi/bannerbg2.png);
+    background-size: cover;
+    top: -60px;
+    z-index: 0;
     animation: herobg 15s linear infinite;
 }
 
@@ -54,21 +75,17 @@ section.hero .jumbotron {
         background-position-x: 0;
     }
     100% {
-        background-position-x: 1512px;
+        background-position-x: 1450px;
     }
 }
 
-section.hero .jumbotron .hero {
-    margin-bottom: 260px;
-    flex: 1;
-}
-
 section.hero .jumbotron .hero_text {
-    padding-bottom: 100px;
+    position: relative;
     display: flex;
     flex-direction: column;
     margin: auto;
     flex: 2;
+    z-index: 1;
 }
 
 section.hero .jumbotron .hero_text p {
@@ -82,170 +99,142 @@ section.hero .jumbotron .hero_text h1 {
 }
 
 
-/* Populer */
+/* Peringkat */
 
-section.populer {
+section.peringkat {
+    margin: 0;
+    padding: 0;
     position: relative;
-    background-color: #E8FFEB;
-    height: 50px;
+    color: #1B4332;
+    bottom: -600px;
 }
 
-section.populer .jumbotron {
+section.peringkat h1 {
     position: relative;
-    width: 100%;
-    height: 670px;
-    top: -250px;
-    left: 0px;
-    background: url("../Gambar/curve/home_curve_reverse.png");
-    background-size: cover;
-}
-
-section.populer .row {
-    padding: 25px;
-    margin-top: 120px;
-    width: 100%;
-}
-
-section.populer .row .card {
-    width: 18rem;
-    height: 400px;
-    background-color: #E8FFEB;
-    padding: 10px 15px;
-    border-radius: 30px;
-}
-
-section.populer .row h5 {
-    font-size: 38px;
     color: #1B4332;
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 50px;
 }
 
-section.populer .row .btn {
-    width: 120px;
-    height: 37px;
-    border-radius: 15px;
-    background-color: #85CDA7;
-    border: 1px solid #85CDA7;
-    color: #1B4332;
-}
-
-section.populer .row .btn:hover {
-    height: 42px;
-    width: 125px;
-    background-color: #2A7050;
-    color: #85CDA7;
-    transition: 0.5s;
-}
-
-section.populer .row h1 {
-    font-size: 70px;
-    color: white;
-}
-
-section.populer .row p {
-    font-size: 35px;
-    color: white;
-}
-
-
-/* Bagian Utama */
-
-section.utama {
-    position: absolute;
-    margin-top: 510px;
-    padding: 25px;
-}
-
-section.utama .row {
+section.peringkat .container {
+    margin: 0;
+    padding: 0;
     display: flex;
 }
 
-section.utama .row #utama_populer h1 {
-    font-size: 70px;
+section.peringkat .isi {
+    width: 100%;
+    margin: 30px;
+    padding: 0;
+}
+
+section.peringkat .isi a {
     color: #1B4332;
 }
 
-section.utama .row #utama_populer p {
-    margin-top: 40px;
-    font-size: 25px;
+section.peringkat .isi a:hover {
+    text-decoration: none;
+}
+
+section.peringkat .isi a h5:hover {
     color: #40916C;
 }
 
-section.utama .row a span {
-    font-size: 25px;
+section.peringkat .row {
+    position: relative;
+    left: -20px;
 }
 
-section.utama .row .btn {
-    width: 220px;
-    height: 50px;
-    border-radius: 30px;
-    background-color: #85CDA7;
-    border: 1px solid #85CDA7;
-    box-shadow: 5px 10px 10px 0 rgba(151, 229, 188, 0.5);
+section.peringkat .row .col-sm {
+    position: relative;
+    left: -20px;
+    margin: 0;
+    padding: 0;
+    width: 100px;
 }
 
-section.utama .row .btn:hover {
-    height: 55px;
-    width: 225px;
-    background-color: #2A7050;
-    color: #85CDA7;
-    transition: 0.5s;
+section.peringkat .row .col-sm h5.head_peringkat {
+    position: relative;
+    right: -110px;
 }
 
-section.utama .row #utama_populer {
-    flex: 2;
-    margin-right: 80px;
+section.peringkat .isi h5 {
+    font-size: 20px;
+    color: #1B4332;
 }
 
-section.utama .row #utama_fitur {
-    flex: 3;
-    margin-top: 10px;
+section.peringkat .isi .urut {
+    margin-top: 50px;
+    margin-left: 70px;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    box-sizing: border-box;
-    left: 90px;
 }
 
-section.utama .row #utama_fitur img {
-    width: 112px;
-    height: 105px;
+section.peringkat .isi .content {
+    position: relative;
+    left: -50px;
+    margin-top: 50px;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
 }
 
-section.utama .row #utama_fitur p {
+section.peringkat .isi .content span {
+    font-family: "muli";
     font-size: 20px;
     color: #40916C;
+    margin: 25px 0;
 }
 
-section.utama .row #utama_fitur h4 {
-    color: #1B4332;
+section.peringkat .isi .urut img {
+    width: 100px;
+    height: 100px;
+    margin-left: 200px;
 }
 
-section.utama .row #utama_fitur div {
+section.peringkat .isi .info {
     width: 100%;
-    margin: 0 20px;
-    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
 }
 
-section.utama .row #utama_fitur .fitur1 {
-    width: 42%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+section.peringkat .isi .info .info_isi {
+    width: 100%;
+    text-align: center;
+    margin-right: 150px;
 }
 
-section.utama .row #utama_fitur .fitur2 {
-    width: 42%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+section.peringkat .isi .info .info_isi span {
+    position: relative;
+    font-size: 20px;
+    bottom: -15px;
 }
 
-section.utama .row #utama_fitur .fitur3 {
-    width: 50%;
-    display: flex;
+section.peringkat .isi .info .info_isi:nth-last-child(2) h5 {
+    width: 300px;
+}
+
+section.peringkat .isi .info .info_isi h5 {
+    width: 100%;
+}
+
+section.peringkat .isi .info .info_isi:nth-child(3) {
+    position: relative;
+    left: 0px;
+    margin-right: 0;
+    width: 50px;
+}
+
+section.peringkat .isi .info .info_isi:nth-child(3) span {
+    position: relative;
+    right: -20px;
+}
+
+section.peringkat .garis {
+    width: 95%;
+    height: 3px;
+    background-color: #1B4332;
     margin-top: 30px;
-    flex-direction: column;
-    justify-content: center;
 }
 
 
@@ -254,7 +243,7 @@ section.utama .row #utama_fitur .fitur3 {
 section.footer_card {
     position: relative;
     width: 100%;
-    bottom: -1250px;
+    bottom: -900px;
     display: flex;
     justify-content: space-around;
     z-index: 1;
@@ -306,7 +295,7 @@ footer {
     width: 100%;
     height: 870px;
     margin-top: 100px;
-    bottom: -820px;
+    bottom: -500px;
     left: 0;
     background-color: #1B4332;
     background: url("../Gambar/curve/home_footer.png");
@@ -318,7 +307,7 @@ footer .container {
     position: relative;
     color: white;
     font-size: 70px;
-    bottom: -400px;
+    bottom: -415px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -400,7 +389,7 @@ footer .container .hubungi a img:hover {
 footer .container .copy {
     position: relative;
     margin: 0 auto;
-    bottom: -190px;
+    bottom: -180px;
 }
 
 footer .container .copy h5 {
@@ -409,203 +398,114 @@ footer .container .copy h5 {
 }
 
 
-/* Responsive */
+/* Responsive mobile */
 
 @media screen and (max-width: 576px) {
-    body {
-        height: 1000px;
-    }
     .navbar .home {
         display: inline;
     }
     .navbar a img {
-        display: none
+        display: none;
     }
+    /* Hero */
     section.hero {
+        position: relative;
         width: 100%;
-        height: 400px;
     }
     section.hero .jumbotron {
-        height: 200px;
-        background-size: cover;
-        animation: herobg 30s linear infinite;
+        position: absolute;
+        width: 100%;
+        height: 270px;
+        background: url(../Gambar/curve/tentang_curve2.png);
+        padding: 0 25px;
+        display: flex;
+        justify-content: space-between;
     }
     section.hero .jumbotron .hero {
-        margin-bottom: 0;
-    }
-    section.hero img {
-        margin-top: 20px;
-        width: 130px;
-        height: 100px;
-    }
-    section.hero .jumbotron .hero_text h1 {
         position: relative;
-        font-size: 20px;
-        margin-top: 20px;
+        width: 100%;
+        flex: 1;
+        bottom: -40px;
     }
-    section.hero .jumbotron .hero_text p {
-        position: relative;
-        font-size: 15px;
+    section.hero .jumbotron .hero img {
+        width: 200px;
+        height: 150px;
     }
-    /* Populer */
-    section.populer {
-        position: relative;
-        background-color: white;
-    }
-    section.populer .jumbotron {
-        position: relative;
+    section.hero .jumbotron .background {
+        position: absolute;
         width: 100%;
         height: 200px;
-        top: -250px;
-        left: 0px;
+        top: 0;
+        left: 0;
+        background: url(../Gambar/ilustrasi/bannerbg2.png);
+        background-size: cover;
+        z-index: 0;
+        animation: herobg 15s linear infinite;
     }
-    section.populer .row {
+    section.hero .jumbotron .hero_text {
         position: relative;
-        top: -150px;
-        width: 100%;
-    }
-    section.populer .row .card {
-        position: absolute;
-        width: 100px;
-        height: 130px;
-        right: -20px;
-        top: 30px;
-        padding: 0px 0px;
-        border-radius: 20px;
-        display: flex;
-        flex-wrap: nowrap;
-        justify-content: center;
-        box-sizing: border-box;
-    }
-    section.populer .row h5 {
-        position: relative;
-        font-size: 10px;
-        top: -10px;
-    }
-    section.populer .row .btn {
-        position: relative;
-        width: 70px;
-        height: 10px;
-        font-size: 7px;
-        border-radius: 15px;
-        top: -55px;
-    }
-    section.populer .row #top .btn {
-        top: -49px;
-        left: -5px;
-    }
-    section.populer .row #banding .btn {
-        top: -30px;
-        left: -5px;
-    }
-    section.populer .row #banding {
-        margin-right: 20px;
-    }
-    section.populer .row .btn span {
-        position: relative;
-        font-family: "muli";
-        top: -5px;
-    }
-    section.populer .row h1 {
-        width: 90px;
-        font-size: 20px;
-        margin-top: 30px;
-    }
-    section.populer .row p {
-        font-size: 10px;
-    }
-    /* Bagian Utama */
-    section.utama {
-        position: relative;
-        top: -570px;
-        padding: 0;
+        top: 0px;
         display: flex;
         flex-direction: column;
-        justify-content: start;
+        margin: auto;
+        flex: 2;
+        z-index: 1;
     }
-    section.utama .row {
-        display: flex;
-        width: 100%;
-        padding: 0;
-        background-color: white;
+    section.hero .jumbotron .hero_text p {
+        font-size: 11.5px;
     }
-    section.utama .row #utama_populer {
-        position: relative;
-        right: -55px;
-        width: 100%;
-        text-align: center;
-    }
-    section.utama .row #utama_populer h1 {
-        width: 210px;
+    section.hero .jumbotron .hero_text h1 {
         font-size: 20px;
     }
-    section.utama .row #utama_populer p {
-        margin-top: 10px;
-        font-size: 10px;
-    }
-    section.utama .row .btn {
-        position: relative;
-        width: 70px;
-        height: 10px;
-        font-size: 7px;
-        border-radius: 15px;
-        top: -20px;
-    }
-    section.utama .row .btn span {
-        position: relative;
-        font-family: "muli";
-        top: -5px;
-        font-size: 6px;
-    }
-    section.utama .row #utama_fitur {
-        width: 90%;
-        position: absolute;
+    /* Alasan */
+    section.alasan {
         padding: 0;
-        margin-top: 30px;
-        left: 35px;
-        bottom: -280px;
+        margin: 0;
+        position: relative;
+        padding: 0 20px;
+        width: 100%;
+        bottom: -300px;
         display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         flex-wrap: wrap;
+    }
+    section.alasan .row {
+        padding-top: 30px;
+        display: flex;
+        flex-direction: column;
         justify-content: center;
-        box-sizing: border-box;
     }
-    section.utama .row #utama_fitur img {
-        width: 50px;
-        height: 40px;
+    section.alasan .row .sumber {
+        order: 1;
     }
-    section.utama .row #utama_fitur p {
+    section.alasan .row .sumber_text {
+        order: 2;
+    }
+    section.alasan p {
         font-size: 10px;
     }
-    section.utama .row #utama_fitur h4 {
-        font-size: 14px;
+    section.alasan h1 {
+        margin-bottom: 10px;
+        font-size: 20px;
+        margin-top: 50px;
     }
-    section.utama .row #utama_fitur div {
-        width: 100%;
+    section.alasan img {
+        width: 120px;
+        height: 103px;
     }
-    section.utama .row #utama_fitur .fitur1 {
-        width: 35%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+    section.alasan .row:nth-child(1) img {
+        width: 200px;
+        height: 100px;
     }
-    section.utama .row #utama_fitur .fitur2 {
-        width: 35%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-    section.utama .row #utama_fitur .fitur3 {
-        width: 40%;
-        display: flex;
-        margin-top: 30px;
-        flex-direction: column;
-        justify-content: center;
+    section.alasan .row:nth-child(1) {
+        padding-left: 15px;
     }
     /* Card Footer */
     section.footer_card {
         position: relative;
         width: 100%;
-        top: -220px;
+        bottom: -360px;
         display: flex;
         justify-content: space-around;
         z-index: 1;
@@ -654,7 +554,7 @@ footer .container .copy h5 {
     /* Footer */
     footer {
         position: relative;
-        top: -450px;
+        bottom: -150px;
         width: 100%;
         height: 300px;
         margin-top: 100px;
