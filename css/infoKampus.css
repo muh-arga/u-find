@@ -515,146 +515,344 @@ footer .container .copy h5 {
     section.hero .jumbotron {
         position: absolute;
         width: 100%;
-        height: 270px;
-        background: url(../Gambar/curve/tentang_curve2.png);
-        padding: 0 25px;
-        display: flex;
-        justify-content: space-between;
-    }
-    section.hero .jumbotron .hero {
-        position: relative;
-        width: 100%;
-        flex: 1;
-        bottom: -40px;
-    }
-    section.hero .jumbotron .hero img {
-        width: 200px;
-        height: 150px;
-    }
-    section.hero .jumbotron .background {
-        position: absolute;
-        width: 100%;
-        height: 200px;
-        top: 0;
-        left: 0;
-        background: url(../Gambar/ilustrasi/bannerbg2.png);
+        height: 300px;
+        background-image: url(../Gambar/foto/pens.jpg);
         background-size: cover;
-        z-index: 0;
-        animation: herobg 15s linear infinite;
+        background-repeat: no-repeat;
+        background-position-y: 0;
+        background-position-x: -90px;
     }
-    section.hero .jumbotron .hero_text {
+    /* Hero Card */
+    section.hero_card .container {
         position: relative;
-        top: 0px;
+        width: 90%;
+        height: 370px;
+        border-radius: 30px;
+        background-color: white;
+        box-shadow: 0 10px 30px 0 rgba(133, 205, 167, 0.5);
+        bottom: -100px;
+        z-index: 99;
+    }
+    section.hero_card .container {
         display: flex;
         flex-direction: column;
-        margin: auto;
-        flex: 2;
-        z-index: 1;
     }
-    section.hero .jumbotron .hero_text p {
-        font-size: 11.5px;
+    section.hero_card .container .col {
+        display: flex;
+        flex-direction: column;
     }
-    section.hero .jumbotron .hero_text h1 {
-        font-size: 20px;
+    section.hero_card .container .col:nth-child(1) {
+        flex: 1;
     }
-    /* Alasan */
-    section.alasan {
-        padding: 0;
-        margin: 0;
+    section.hero_card .container .info {
+        margin-top: 20px;
+        flex: 4;
+    }
+    section.hero_card .container .info h1 {
+        color: #1B4332;
+        font-size: 15px;
+    }
+    section.hero_card .container .info h4 {
         position: relative;
-        padding: 0 20px;
-        width: 100%;
-        bottom: -300px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        flex-wrap: wrap;
-    }
-    section.alasan .row {
-        padding-top: 30px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-    section.alasan .row .sumber {
-        order: 1;
-    }
-    section.alasan .row .sumber_text {
-        order: 2;
-    }
-    section.alasan p {
+        bottom: -50px;
         font-size: 10px;
+        right: -20px;
+        color: #40916C;
+        text-align: center;
+        font-family: "muli";
     }
-    section.alasan h1 {
-        margin-bottom: 10px;
-        font-size: 20px;
-        margin-top: 50px;
-    }
-    section.alasan img {
-        width: 120px;
-        height: 103px;
-    }
-    section.alasan .row:nth-child(1) img {
-        width: 200px;
-        height: 100px;
-    }
-    section.alasan .row:nth-child(1) {
-        padding-left: 15px;
-    }
-    /* Card Footer */
-    section.footer_card {
-        position: relative;
-        width: 100%;
-        bottom: -360px;
-        display: flex;
-        justify-content: space-around;
-        z-index: 1;
-    }
-    section.footer_card .card {
-        position: relative;
-        width: 100px;
-        height: 130px;
-        padding: 0px 0px;
-        border-radius: 20px;
-        display: flex;
-        flex-wrap: nowrap;
-        justify-content: center;
-        box-sizing: border-box;
-    }
-    section.footer_card .card h5 {
-        position: relative;
-        font-size: 10px;
+    section.hero_card .container .info h4.alamat {
+        left: -10px;
         top: -10px;
     }
-    section.footer_card .card:nth-child(2) {
-        bottom: 40px;
+    section.hero_card .container .info h4.kartegori {
+        left: -60px;
     }
-    section.footer_card .card:nth-child(2) h5 {
-        font-size: 9px;
+    section.hero_card .container .info h4.akreditasi {
+        left: -35px;
     }
-    section.footer_card .card .btn {
+    section.hero_card .container .info h4.peringkat {
+        left: -30px;
+    }
+    section.hero_card .container .info h5 {
         position: relative;
-        width: 70px;
-        height: 10px;
-        font-size: 7px;
-        border-radius: 15px;
-        top: -35px;
-        left: -4px;
+        top: -65px;
+        font-size: 13px;
+        left: 0;
+        text-align: center;
+        color: #1B4332;
     }
-    section.footer_card .card #poltek {
-        position: relative;
-        top: -40px;
-        left: -4px;
+    section.hero_card .container .info h5.kartegori {
+        left: -2px;
     }
-    section.footer_card .card .btn span {
+    section.hero_card .container .info h5.alamat {
+        top: -105px;
+        left: -60px;
+    }
+    section.hero_card .container .info h5.peringkat {
+        left: -20px;
+    }
+    section.hero_card .container .col img {
+        margin-left: 70px;
+        margin-top: 25px;
+        width: 100px;
+        height: 100px;
+    }
+    /* Info */
+    section.info {
+        margin: 0;
+        padding: 0;
         position: relative;
+        bottom: -150px;
+    }
+    section.info .bg {
+        position: relative;
+        background-color: #85CDA7;
+        height: 7px;
+        width: 255px;
+        top: -60px;
+        border-radius: 30px;
+        margin: 0 0 30px 15%;
+        z-index: 0;
+    }
+    section.info h1 {
+        position: relative;
+        text-align: center;
+        font-size: 30px;
+        margin-bottom: 50px;
+        z-index: 1;
+    }
+    section.info .row {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    section.info .row .isi {
+        width: 100%;
+        position: relative;
+        left: -75px;
+    }
+    section.info .row .isi:nth-child(2) {
+        position: relative;
+        left: -50px;
+    }
+    section.info .row .col h2 {
+        position: relative;
+        font-size: 15px;
         font-family: "muli";
-        top: -5px;
+        color: #40916C;
+    }
+    section.info .row .col h2.text {
+        position: absolute;
+        width: 190px;
+        font-size: 13px;
+    }
+    section.info .row .col a.text {
+        position: absolute;
+        font-family: "muli";
+        font-size: 15px;
+        color: #40916C;
+    }
+    section.info .row .col a.text:nth-child(2) {
+        margin-left: 0;
+        margin-top: 25px;
+    }
+    section.info .row .col a.text:nth-child(1):hover,
+    section.info .row .col a.text:nth-child(2):hover {
+        font-size: 15px;
+        text-decoration: none;
+        transition: 0.3s;
+    }
+    section.info .row #image_link {
+        position: relative;
+        width: 300px;
+        right: -100px;
+    }
+    section.info .row .isi a img {
+        position: relative;
+        left: -20px;
+        width: 20px;
+        height: 20px;
+    }
+    section.info .row .isi a img:hover {
+        position: relative;
+        top: -10px;
+        transition: 0.5s;
+    }
+    section.info .row .gambar {
+        right: -140px;
+        width: 30px;
+        height: 30px;
+    }
+    section.info .row .col img {
+        position: relative;
+        left: -115px;
+        width: 30px;
+        height: 30px;
+    }
+    section.info .garis {
+        position: relative;
+        width: 90%;
+        height: 2px;
+        left: -20px;
+        margin-right: 0;
+        padding: 0;
+        background-color: #1B4332;
+    }
+    /* Profil */
+    section.profil {
+        position: relative;
+        bottom: -130px;
+    }
+    section.profil .jumbotron {
+        position: relative;
+        width: 100%;
+        height: 1030px;
+        padding: 50px 20px 0;
+        left: 0px;
+        background: url("../Gambar/curve/info_campus.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    section.profil .jumbotron .bg {
+        position: relative;
+        background-color: #40916C;
+        height: 5px;
+        width: 105px;
+        top: -109px;
+        border-radius: 30px;
+        margin: 100px 0 30px 31%;
+        z-index: 0;
+    }
+    section.profil .jumbotron h1 {
+        font-size: 30px;
+        position: relative;
+        color: white;
+        margin: 150px 0 0 36%;
+        z-index: 1;
+    }
+    section.profil .jumbotron p {
+        position: relative;
+        top: -100px;
+        color: white;
+        font-size: 15px;
+        margin-top: 0;
+    }
+    /* Jurusan */
+    section.jurusan {
+        position: relative;
+        bottom: -100px;
+    }
+    section.jurusan .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    section.jurusan h1 {
+        font-size: 30px;
+        position: relative;
+        margin-left: 28%;
+        margin-bottom: 100px;
+        z-index: 1;
+    }
+    section.jurusan div.bg {
+        position: relative;
+        background-color: #85CDA7;
+        height: 5px;
+        width: 135px;
+        top: -109px;
+        border-radius: 30px;
+        margin: 0 0 30px 25%;
+        z-index: 0;
+    }
+    section.jurusan .content .search {
+        position: relative;
+        left: -10px;
+        top: -100px;
+        width: 100%;
+        height: 280px;
+        background-color: #2A7050;
+        padding: 20px 15px;
+        border-radius: 25px;
+    }
+    section.jurusan .content .search label {
+        color: #1B4332;
+        font-family: "muli";
+        font-size: 18px;
+    }
+    section.jurusan .content .search input {
+        font-size: 13px;
+        border-radius: 15px;
+        border: 2px solid #1B4332;
+        color: #40916C;
+    }
+    section.jurusan .content .search .btn {
+        position: relative;
+        width: 100px;
+        height: 35px;
+        right: -105px;
+        margin-top: 15px;
+        border-radius: 15px;
+        font-size: 15px;
+        font-family: "ø";
+        padding-top: 0;
+        text-align: center;
+        background-color: #40916C;
+        box-shadow: 5px 5px 15px 0 rgba(65, 184, 120, 0.5);
+        color: white;
+        border: none;
+        transition: 0.2s;
+    }
+    section.jurusan .content .search .btn:hover {
+        background-color: #85CDA7;
+        color: #1B4332;
+        width: 100px;
+        height: 35px;
+    }
+    section.jurusan .content .result {
+        position: relative;
+        top: -50px;
+        margin-left: 50px;
+        display: flex;
+        flex-direction: column;
+    }
+    section.jurusan .content .result .row {
+        width: 100%;
+        margin-bottom: 0;
+        float: right;
+    }
+    section.jurusan .content .result .row .departemen h2 {
+        font-family: "muli";
+        font-size: 13px;
+        width: 100%;
+        margin-bottom: 5px;
+        color: #40916C;
+        top: -40px;
+    }
+    section.jurusan .content .result .row .isi h2 {
+        width: 130px;
+        font-family: "muli";
+        color: #40916C;
+        text-align: right;
+        right: -15px;
+    }
+    section.jurusan .content .result .row h2 {
+        position: relative;
+        font-family: "ø";
+        font-size: 15px;
+        color: #1B4332;
+        margin-bottom: 50px;
+    }
+    section.jurusan .content .result .garis {
+        position: relative;
+        width: 100%;
+        height: 2px;
+        top: -25px;
+        background-color: #1B4332;
     }
     /* Footer */
     footer {
         position: relative;
-        bottom: -150px;
+        bottom: 0;
         width: 100%;
         height: 300px;
         margin-top: 100px;
@@ -672,8 +870,11 @@ footer .container .copy h5 {
         top: -60px;
     }
     footer .container .text h1 {
+        position: relative;
+        top: -20px;
         font-size: 20px;
         text-align: center;
+        margin-left: 45px;
     }
     footer .container .text .garis {
         display: none;

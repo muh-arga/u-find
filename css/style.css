@@ -554,6 +554,7 @@ footer .container .copy h5 {
         font-size: 7px;
         border-radius: 15px;
         top: -20px;
+        box-shadow: 3px 2px 5px 1px rgba(151, 229, 188, 0.5);
     }
     section.utama .row .btn span {
         position: relative;
@@ -616,11 +617,14 @@ footer .container .copy h5 {
     }
     section.footer_card .card {
         position: relative;
-        background-color: #E8FFEB;
-        padding: 10px 15px;
-        border-radius: 30px;
-        width: 18rem;
-        height: 400px;
+        width: 100px;
+        height: 130px;
+        padding: 0px 0px;
+        border-radius: 20px;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        box-sizing: border-box;
     }
     section.footer_card .card h5 {
         position: relative;

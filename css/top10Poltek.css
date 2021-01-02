@@ -461,49 +461,146 @@ footer .container .copy h5 {
     section.hero .jumbotron .hero_text h1 {
         font-size: 20px;
     }
-    /* Alasan */
-    section.alasan {
-        padding: 0;
+    /* Peringkat */
+    section.peringkat {
         margin: 0;
+        padding: 0;
         position: relative;
-        padding: 0 20px;
-        width: 100%;
+        color: #1B4332;
         bottom: -300px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        flex-wrap: wrap;
     }
-    section.alasan .row {
-        padding-top: 30px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-    section.alasan .row .sumber {
-        order: 1;
-    }
-    section.alasan .row .sumber_text {
-        order: 2;
-    }
-    section.alasan p {
-        font-size: 10px;
-    }
-    section.alasan h1 {
-        margin-bottom: 10px;
+    section.peringkat h1 {
+        position: relative;
+        color: #1B4332;
+        text-align: center;
         font-size: 20px;
-        margin-top: 50px;
+        margin-bottom: 50px;
     }
-    section.alasan img {
-        width: 120px;
-        height: 103px;
+    section.peringkat .container {
+        position: relative;
+        left: -350px;
+        margin: 0;
+        padding: 0;
+        display: flex;
     }
-    section.alasan .row:nth-child(1) img {
+    section.peringkat .isi {
+        position: relative;
+        width: 100%;
+        padding: 0;
+    }
+    section.peringkat .isi a {
+        color: #1B4332;
+    }
+    section.peringkat .isi a:hover {
+        text-decoration: none;
+    }
+    section.peringkat .isi a h5:hover {
+        color: #40916C;
+    }
+    section.peringkat .row {
+        position: relative;
+    }
+    section.peringkat .row .col-sm {
+        position: relative;
+        left: -65px;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    section.peringkat .row .col-sm h5.head_peringkat {
+        position: relative;
+        font-size: 15px;
+        width: 100px;
+        margin: 0;
+    }
+    section.peringkat .row .col-sm h5.head_nama {
+        position: relative;
+        font-size: 15px;
+        top: -18px;
+        margin-left: 230px;
+    }
+    section.peringkat .isi h5 {
+        position: relative;
         width: 200px;
-        height: 100px;
+        font-size: 15px;
+        right: -30px;
+        color: #1B4332;
     }
-    section.alasan .row:nth-child(1) {
-        padding-left: 15px;
+    section.peringkat .isi .urut {
+        position: relative;
+        top: -50px;
+        right: -260px;
+        margin-top: 50px;
+        display: flex;
+    }
+    section.peringkat .isi .content {
+        position: relative;
+        margin-top: 50px;
+        margin-left: 50px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    section.peringkat .isi .content span {
+        position: relative;
+        top: -20px;
+        width: 200px;
+        right: -30px;
+        font-family: "muli";
+        font-size: 15px;
+        color: #40916C;
+    }
+    section.peringkat .isi .urut img {
+        position: relative;
+        left: -70px;
+        top: -10px;
+        width: 50px;
+        height: 50px;
+    }
+    section.peringkat .isi .info {
+        position: relative;
+        width: 100%;
+        left: -20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    section.peringkat .isi .info .info_isi {
+        width: 100%;
+        top: -20px;
+        position: relative;
+        margin-right: 0;
+    }
+    section.peringkat .isi .info .info_isi span {
+        position: relative;
+        font-size: 15px;
+        top: -5px;
+        left: 0;
+    }
+    section.peringkat .isi .info .info_isi:nth-last-child(2) h5 {
+        width: 100%;
+    }
+    section.peringkat .isi .info .info_isi h5 {
+        position: relative;
+        left: 0;
+        width: 100%;
+        font-size: 15px;
+    }
+    section.peringkat .isi .info .info_isi:nth-child(3) {
+        position: relative;
+        margin-right: 0;
+        width: 50px;
+    }
+    section.peringkat .isi .info .info_isi:nth-child(3) span {
+        text-align: center;
+        left: 0;
+    }
+    section.peringkat .garis {
+        position: relative;
+        width: 95%;
+        height: 3px;
+        top: -40px;
+        background-color: #1B4332;
     }
     /* Card Footer */
     section.footer_card {

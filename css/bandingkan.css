@@ -339,6 +339,9 @@ footer .container .copy h5 {
 /* Responsive mobile */
 
 @media screen and (max-width: 576px) {
+    body {
+        width: 100%;
+    }
     .navbar .home {
         display: inline;
     }
@@ -363,11 +366,12 @@ footer .container .copy h5 {
         position: relative;
         width: 100%;
         flex: 1;
-        bottom: -40px;
+        bottom: -100px;
+        right: -20px;
     }
     section.hero .jumbotron .hero img {
         width: 200px;
-        height: 150px;
+        height: 130px;
     }
     section.hero .jumbotron .background {
         position: absolute;
@@ -378,7 +382,7 @@ footer .container .copy h5 {
         background: url(../Gambar/ilustrasi/bannerbg2.png);
         background-size: cover;
         z-index: 0;
-        animation: herobg 15s linear infinite;
+        animation: herobg 35s linear infinite;
     }
     section.hero .jumbotron .hero_text {
         position: relative;
@@ -395,49 +399,131 @@ footer .container .copy h5 {
     section.hero .jumbotron .hero_text h1 {
         font-size: 20px;
     }
-    /* Alasan */
-    section.alasan {
-        padding: 0;
-        margin: 0;
+    /* Cari */
+    section.cari {
         position: relative;
-        padding: 0 20px;
         width: 100%;
         bottom: -300px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        flex-wrap: wrap;
+        left: -25px;
     }
-    section.alasan .row {
-        padding-top: 30px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+    section.cari .row {
+        width: 100%;
     }
-    section.alasan .row .sumber {
-        order: 1;
-    }
-    section.alasan .row .sumber_text {
-        order: 2;
-    }
-    section.alasan p {
-        font-size: 10px;
-    }
-    section.alasan h1 {
-        margin-bottom: 10px;
-        font-size: 20px;
-        margin-top: 50px;
-    }
-    section.alasan img {
-        width: 120px;
-        height: 103px;
-    }
-    section.alasan .row:nth-child(1) img {
+    section.cari .row .col h1 {
+        position: relative;
         width: 200px;
-        height: 100px;
+        margin: 0 0 50px 115px;
+        font-size: 20px;
     }
-    section.alasan .row:nth-child(1) {
-        padding-left: 15px;
+    section.cari .row .search {
+        width: 100%;
+        height: 300px;
+        padding: 20px 50px;
+        border-radius: 30px;
+    }
+    section.cari .row .search h2 {
+        font-size: 20px;
+    }
+    section.cari .row .search label {
+        color: #40916C;
+        font-family: "muli";
+        font-size: 15px;
+    }
+    section.cari .row .search input {
+        width: 300px;
+        height: 30px;
+        border-radius: 10px;
+        border: 2px solid #1B4332;
+        color: #40916C;
+    }
+    section.cari .row div.mb-3 {
+        width: 100%;
+    }
+    section.cari .row .btn {
+        position: relative;
+        width: 110px;
+        height: 30px;
+        top: -130px;
+        left: -180px;
+        border-radius: 30px;
+        font-size: 15px;
+        font-family: "ø";
+        padding-top: 0;
+        text-align: center;
+        background-color: #40916C;
+        box-shadow: 5px 5px 15px 0 rgba(65, 184, 120, 0.5);
+        color: white;
+        border: none;
+        transition: 0.2s;
+    }
+    /* Result */
+    section.result {
+        position: relative;
+        margin-top: 100px;
+    }
+    section.result h2 {
+        color: #1B4332;
+        font-size: 15px;
+    }
+    section.result .row {
+        width: 100%;
+    }
+    section.result .gambar {
+        position: relative;
+        margin: 0;
+        width: 100%;
+    }
+    section.result .gambar .text {
+        position: relative;
+        bottom: -150px;
+    }
+    section.result .gambar .text h2 {
+        position: relative;
+        width: 100px;
+        right: -35px;
+    }
+    section.result .gambar:nth-child(2) {
+        position: relative;
+        left: -100px;
+    }
+    section.result div.col-md-2 {
+        position: relative;
+        width: 50px;
+        right: -50px;
+    }
+    section.result .row .col img {
+        width: 50px;
+        height: 50px;
+        margin-top: 100px;
+    }
+    section.result .isi {
+        position: relative;
+        left: -35px;
+        margin-top: 100px;
+        width: 93%;
+    }
+    section.result .isi img {
+        position: relative;
+        top: -5px;
+        width: 10px;
+        height: 5px;
+    }
+    section.result .isi img.draw {
+        height: 15px;
+    }
+    section.result .isi h2.parameter {
+        width: 110px;
+    }
+    section.result .isi h2.harga {
+        width: 10px;
+        margin-left: 10px;
+    }
+    section.result .garis {
+        position: relative;
+        width: 95%;
+        height: 2px;
+        bottom: -45px;
+        background-color: #1B4332;
     }
     /* Footer */
     footer {

@@ -99,7 +99,7 @@ section.hero .jumbotron .hero_text h1 {
 }
 
 
-/* Peringkat */
+/* Daftar Kampus */
 
 section.daftar_kampus {
     margin: 0;
@@ -460,49 +460,246 @@ footer .container .copy h5 {
     section.hero .jumbotron .hero_text h1 {
         font-size: 20px;
     }
-    /* Alasan */
-    section.alasan {
-        padding: 0;
+    /* Daftar Kampus */
+    section.daftar_kampus {
         margin: 0;
+        padding: 0;
         position: relative;
-        padding: 0 20px;
-        width: 100%;
-        bottom: -300px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        flex-wrap: wrap;
+        bottom: -600px;
+        color: #1B4332;
     }
-    section.alasan .row {
-        padding-top: 30px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-    section.alasan .row .sumber {
-        order: 1;
-    }
-    section.alasan .row .sumber_text {
-        order: 2;
-    }
-    section.alasan p {
-        font-size: 10px;
-    }
-    section.alasan h1 {
-        margin-bottom: 10px;
-        font-size: 20px;
-        margin-top: 50px;
-    }
-    section.alasan img {
-        width: 120px;
-        height: 103px;
-    }
-    section.alasan .row:nth-child(1) img {
+    section.daftar_kampus .container .form-control {
+        position: relative;
+        right: -150px;
         width: 200px;
-        height: 100px;
+        height: 25px;
+        border-radius: 50px;
+        border: 3px solid #1B4332;
+        margin: 0 20px 90px 250px;
     }
-    section.alasan .row:nth-child(1) {
-        padding-left: 15px;
+    section.daftar_kampus .container .btn {
+        position: relative;
+        right: -140px;
+        width: 50px;
+        height: 5px;
+        border-radius: 20px;
+        border: none;
+        font-size: 15px;
+        padding-bottom: 20px;
+        font-family: "ø";
+        background-color: #40916C;
+        transition: 0.2s;
+    }
+    section.daftar_kampus h1 {
+        color: #1B4332;
+        position: relative;
+        text-align: center;
+        font-size: 50px;
+        margin-bottom: 50px;
+    }
+    section.daftar_kampus {
+        margin: 0;
+        padding: 0;
+        position: relative;
+        color: #1B4332;
+        bottom: -300px;
+    }
+    section.daftar_kampus h1 {
+        position: relative;
+        color: #1B4332;
+        text-align: center;
+        font-size: 20px;
+        margin-bottom: 50px;
+    }
+    section.daftar_kampus .container {
+        position: relative;
+        left: -350px;
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
+    section.daftar_kampus .isi {
+        position: relative;
+        width: 100%;
+        padding: 0;
+    }
+    section.daftar_kampus .isi a {
+        color: #1B4332;
+    }
+    section.daftar_kampus .isi a:hover {
+        text-decoration: none;
+    }
+    section.daftar_kampus .isi a h5:hover {
+        color: #40916C;
+    }
+    section.daftar_kampus .row {
+        position: relative;
+    }
+    section.daftar_kampus .row .col-sm {
+        position: relative;
+        left: -65px;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    section.daftar_kampus .row .col-sm h5.head_peringkat {
+        position: relative;
+        font-size: 15px;
+        width: 100px;
+        margin: 0;
+    }
+    section.daftar_kampus .row .col-sm h5.head_nama {
+        position: relative;
+        font-size: 15px;
+        top: -18px;
+        margin-left: 245px;
+    }
+    section.daftar_kampus .isi h5 {
+        position: relative;
+        width: 200px;
+        font-size: 15px;
+        right: -30px;
+        color: #1B4332;
+    }
+    section.daftar_kampus .isi .urut {
+        position: relative;
+        top: -50px;
+        right: -300px;
+        margin-top: 50px;
+        display: flex;
+    }
+    section.daftar_kampus .isi .content {
+        position: relative;
+        margin-top: 50px;
+        margin-left: 50px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    section.daftar_kampus .isi .content span {
+        position: relative;
+        top: -5px;
+        width: 200px;
+        margin-bottom: 30px;
+        right: -30px;
+        font-family: "muli";
+        font-size: 15px;
+        color: #40916C;
+    }
+    section.daftar_kampus .isi .urut img {
+        position: relative;
+        left: -115px;
+        top: -10px;
+        width: 50px;
+        height: 50px;
+    }
+    section.daftar_kampus .isi .info {
+        position: relative;
+        width: 100%;
+        left: -20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    section.daftar_kampus .isi .info .info_isi {
+        width: 100%;
+        top: -20px;
+        position: relative;
+        margin-right: 0;
+    }
+    section.daftar_kampus .isi .info .info_isi span {
+        position: relative;
+        font-size: 15px;
+        top: -5px;
+        left: 0;
+    }
+    section.daftar_kampus .isi .info .info_isi:nth-last-child(2) h5 {
+        width: 100%;
+    }
+    section.daftar_kampus .isi .info .info_isi h5 {
+        position: relative;
+        left: 0;
+        width: 100%;
+        font-size: 15px;
+    }
+    section.daftar_kampus .isi .info .info_isi:nth-child(3) {
+        position: relative;
+        margin-right: 0;
+        width: 50px;
+    }
+    section.daftar_kampus .isi .info .info_isi:nth-child(3) span {
+        text-align: center;
+        left: 0;
+    }
+    section.daftar_kampus .garis {
+        position: relative;
+        width: 95%;
+        height: 3px;
+        top: -40px;
+        background-color: #1B4332;
+    }
+    /* Pagination */
+    section.pagination {
+        width: 10%;
+        position: relative;
+        bottom: -270px;
+        right: -165px;
+        z-index: 1;
+    }
+    section.pagination a {
+        color: #40916C;
+        border: none;
+        font-size: 15px;
+    }
+    /* Card Footer */
+    section.footer_card {
+        position: relative;
+        width: 100%;
+        bottom: -360px;
+        display: flex;
+        justify-content: space-around;
+        z-index: 1;
+    }
+    section.footer_card .card {
+        position: relative;
+        width: 100px;
+        height: 130px;
+        padding: 0px 0px;
+        border-radius: 20px;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        box-sizing: border-box;
+    }
+    section.footer_card .card h5 {
+        position: relative;
+        font-size: 10px;
+        top: -10px;
+    }
+    section.footer_card .card:nth-child(2) {
+        bottom: 40px;
+    }
+    section.footer_card .card:nth-child(2) h5 {
+        font-size: 9px;
+    }
+    section.footer_card .card .btn {
+        position: relative;
+        width: 70px;
+        height: 10px;
+        font-size: 7px;
+        border-radius: 15px;
+        top: -35px;
+        left: -4px;
+    }
+    section.footer_card .card #poltek {
+        position: relative;
+        top: -40px;
+        left: -4px;
+    }
+    section.footer_card .card .btn span {
+        position: relative;
+        font-family: "muli";
+        top: -5px;
     }
     /* Footer */
     footer {
@@ -565,6 +762,9 @@ footer .container .copy h5 {
         height: 15px;
         margin: 2px 5px;
         right: -17px;
+    }
+    footer .container .hubungi a.wa img {
+        margin-right: 20px;
     }
     /* Copy Right */
     footer .container .copy {
