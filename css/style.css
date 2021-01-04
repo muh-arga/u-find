@@ -542,6 +542,7 @@ footer .container .copy h5 {
     section.utama .row #utama_populer h1 {
         width: 210px;
         font-size: 20px;
+        margin-left: 13px;
     }
     section.utama .row #utama_populer p {
         margin-top: 10px;
@@ -675,6 +676,7 @@ footer .container .copy h5 {
         position: relative;
         margin: 0 auto;
         top: -60px;
+        right: -17px;
     }
     footer .container .text h1 {
         font-size: 20px;
