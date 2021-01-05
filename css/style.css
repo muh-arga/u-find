@@ -1,14 +1,24 @@
+@font-face {
+    font-family: 'muli';
+    src: url('../fonts/Muli-Regular.ttf') format('ttf');
+}
+
+@font-face {
+    font-family: 'ø';
+    src: url('../fonts/RifficFree-Bold.ttf') format('ttf');
+}
+
 h1,
 h2,
 h3,
 h4,
 h5,
 span {
-    font-family: "ø";
+    font-family: "ø", Helvetica, Arial, sans-serif;
 }
 
 p {
-    font-family: "muli";
+    font-family: "muli", 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .navbar {
@@ -540,9 +550,9 @@ footer .container .copy h5 {
         text-align: center;
     }
     section.utama .row #utama_populer h1 {
-        width: 210px;
+        position: relative;
+        width: 100%;
         font-size: 20px;
-        margin-left: 13px;
     }
     section.utama .row #utama_populer p {
         margin-top: 10px;

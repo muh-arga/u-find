@@ -1,14 +1,24 @@
+@font-face {
+    font-family: 'muli';
+    src: url('../fonts/Muli-Regular.ttf') format('ttf');
+}
+
+@font-face {
+    font-family: 'ø';
+    src: url('../fonts/RifficFree-Bold.ttf') format('ttf');
+}
+
 h1,
 h2,
 h3,
 h4,
 h5,
 span {
-    font-family: "ø";
+    font-family: "ø", Helvetica, Arial, sans-serif;
 }
 
 p {
-    font-family: "muli";
+    font-family: "muli", 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .navbar {
@@ -124,7 +134,7 @@ section.daftar_kampus .container .btn {
     border: none;
     font-size: 25px;
     padding-bottom: 45px;
-    font-family: "ø";
+    font-family: "ø", Helvetica, Arial, sans-serif;
     background-color: #40916C;
     transition: 0.2s;
 }
@@ -212,7 +222,7 @@ section.daftar_kampus .isi .content {
 }
 
 section.daftar_kampus .isi .content span {
-    font-family: "muli";
+    font-family: "muli", 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
     color: #40916C;
     margin: 5px 0 20px;
@@ -486,7 +496,7 @@ footer .container .copy h5 {
         border: none;
         font-size: 15px;
         padding-bottom: 20px;
-        font-family: "ø";
+        font-family: "ø", Helvetica, Arial, sans-serif;
         background-color: #40916C;
         transition: 0.2s;
     }
@@ -582,7 +592,7 @@ footer .container .copy h5 {
         width: 200px;
         margin-bottom: 30px;
         right: -30px;
-        font-family: "muli";
+        font-family: "muli", 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         font-size: 15px;
         color: #40916C;
     }
@@ -698,7 +708,7 @@ footer .container .copy h5 {
     }
     section.footer_card .card .btn span {
         position: relative;
-        font-family: "muli";
+        font-family: "muli", 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         top: -5px;
     }
     /* Footer */

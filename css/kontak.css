@@ -1,14 +1,24 @@
+@font-face {
+    font-family: 'muli';
+    src: url('../fonts/Muli-Regular.ttf') format('ttf');
+}
+
+@font-face {
+    font-family: 'ø';
+    src: url('../fonts/RifficFree-Bold.ttf') format('ttf');
+}
+
 h1,
 h2,
 h3,
 h4,
 h5,
 span {
-    font-family: "ø";
+    font-family: "ø", Helvetica, Arial, sans-serif;
 }
 
 p {
-    font-family: "muli";
+    font-family: "muli", 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .navbar {
@@ -64,13 +74,13 @@ section.hubungi_kami .content .input_kontak {
 
 section.hubungi_kami .content .input_kontak h4 {
     color: #40916C;
-    font-family: "muli";
+    font-family: "muli", 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin-bottom: 50px;
 }
 
 section.hubungi_kami .content .input_kontak label {
     color: #1B4332;
-    font-family: "ø";
+    font-family: "ø", Helvetica, Arial, sans-serif;
     font-size: 20px;
 }
 
@@ -93,7 +103,7 @@ section.hubungi_kami .content .input_kontak .btn {
     margin-top: 15px;
     border-radius: 10px;
     font-size: 20px;
-    font-family: "ø";
+    font-family: "ø", Helvetica, Arial, sans-serif;
     padding-top: 0;
     text-align: center;
     background-color: #40916C;
@@ -136,7 +146,7 @@ section.hubungi_kami .content .kontak .row .isi a {
 }
 
 section.hubungi_kami .content .kontak .row .isi a h2 {
-    font-family: "muli";
+    font-family: "muli", 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 30px;
     transition: 0.2s;
 }
@@ -363,13 +373,13 @@ footer .container .copy h5 {
     }
     section.hubungi_kami .content .input_kontak h4 {
         color: #40916C;
-        font-family: "muli";
+        font-family: "muli", 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         font-size: 15px;
         margin-bottom: 50px;
     }
     section.hubungi_kami .content .input_kontak label {
         color: #1B4332;
-        font-family: "ø";
+        font-family: "ø", Helvetica, Arial, sans-serif;
         font-size: 15px;
     }
     section.hubungi_kami .content .input_kontak input {
@@ -394,7 +404,7 @@ footer .container .copy h5 {
         margin-left: 90px;
         border-radius: 10px;
         font-size: 15px;
-        font-family: "ø";
+        font-family: "ø", Helvetica, Arial, sans-serif;
         padding-top: 0;
         text-align: center;
         background-color: #40916C;
@@ -433,7 +443,7 @@ footer .container .copy h5 {
     section.hubungi_kami .content .kontak .row .isi a h2 {
         position: relative;
         bottom: -25px;
-        font-family: "muli";
+        font-family: "muli", 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         font-size: 13px;
         transition: 0.2s;
     }

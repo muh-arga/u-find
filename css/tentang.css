@@ -1,14 +1,24 @@
+@font-face {
+    font-family: 'muli';
+    src: url('../fonts/Muli-Regular.ttf') format('ttf');
+}
+
+@font-face {
+    font-family: 'ø';
+    src: url('../fonts/RifficFree-Bold.ttf') format('ttf');
+}
+
 h1,
 h2,
 h3,
 h4,
 h5,
 span {
-    font-family: "ø";
+    font-family: "ø", Helvetica, Arial, sans-serif;
 }
 
 p {
-    font-family: "muli";
+    font-family: "muli", 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .navbar {
@@ -481,7 +491,7 @@ footer .container .copy h5 {
     }
     section.footer_card .card .btn span {
         position: relative;
-        font-family: "muli";
+        font-family: "muli", 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         top: -5px;
     }
     /* Footer */
@@ -503,6 +513,7 @@ footer .container .copy h5 {
         position: relative;
         margin: 0 auto;
         top: -60px;
+        right: -17px;
     }
     footer .container .text h1 {
         font-size: 20px;
